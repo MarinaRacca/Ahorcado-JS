@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>AHORCADO</title>
+    <link rel="stylesheet" href="ahorcado.css">
+  </head>
+  <body>
+      <div class="main-container">
+        <h1 class="titulo">Juego del ahorcado</h1>
+        <picture>
+          <img src="img/ahorcado_6.png" alt="" id="img6">
+          <img src="img/ahorcado_5.png" alt="" id="img5">
+          <img src="img/ahorcado_4.png" alt="" id="img4">
+          <img src="img/ahorcado_3.png" alt="" id="img3">
+          <img src="img/ahorcado_2.png" alt="" id="img2">
+          <img src="img/ahorcado_1.png" alt="" id="img1">
+          <img src="img/ahorcado_0.png" alt="" id="img0">
+        </picture>
+        <h1 id="final"></h1>
+        <h3 id="si"></h3>
+        <div class="flex-row no-wrap">
+          <h2 class="palabra" id="palabra"></h2>
+          
+        </div>
+        
+        <div class="flex-row">
+          <div class="col">
+            <div class="flex-row" id="teclado">
+            </div>
+          </div>
+          <div class="col"></div>
+        </div>
+
+        <div class="flex-row" id="turnos">
+          <div class="col">
+            <h3>Intentos restantes: <span id="intentos">6</span></h3>
+          </div>
+          <br> <br>
+          <div class="col">
+            <button onclick="pista()" id="pista">Pista</button>
+            <span id="blanco-pista"></span> <br><br>
+            <button onclick="inicio()" id="reset">Reiniciar el juego</button>
+            
+          </div>
+        </div>
+
+      </div>
+    <script src="ahorcado.js"></script>
+  </body>
+</html>

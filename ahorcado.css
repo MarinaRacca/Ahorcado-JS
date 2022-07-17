@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+.main-container {
+  max-width: 800px;
+  margin: auto;
+}
+h1.titulo {
+  margin: 50px auto 80px auto;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+h1#final {
+  text-align: center;
+  color: rgb(11, 105, 8);
+  transition: all .5s ease;
+  transform: scale(0);
+  min-height: 50px;
+  margin-bottom: 0;
+}
+.zoom-in {
+  transform: scale(1) !important;
+}
+#si {
+  text-align: center;
+  min-height: 24px;
+  transform: scale(0);
+}
+.si {
+  animation: zoomInOut 1s ease;
+}
+.rojo {
+  color: red;
+}
+.verde {
+  color: green;
+}
+@keyframes zoomInOut {
+  0% { transform: scale(0); }
+  50% { transform: scale(1); }
+  70% { transform: scale(1); }
+  100% { transform: scale(0); }
+}
+h2.palabra {
+  margin: 0 auto 25px auto;
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 40px;
+  z-index: 1;
+}
+.flex-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 10px auto; 
+}
+.no-wrap {
+  flex-wrap: nowrap !important;
+}
+.col {
+  width: 100%;
+  text-align: center;
+}
+#turnos h3 {
+  margin: auto;
+}
+h3 span {
+   color: black;
+}
+.letra:disabled {
+  color:black;
+}
+picture {
+  position: relative;
+  z-index: 5;
+}
+picture img {
+  position: absolute;
+  top: -120px;
+  height: 200px;
+  z-index: 5;
+}
+#img5, #img4, #img3,
+#img2, #img1, #img0 {
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.fade-in {
+  opacity: 1 !important;
+}
+.encuadre {
+  border: 2px dashed rgb(41, 144, 15);
+  padding: 3px 2px 2px 6px;
+  background-color: rgba(255, 228, 196, 0.808);
+}
+button#reset{
+  margin: 2%;
+  padding: 2%;
+  width: 40%;
+  font-size: larger;
+  color: white;
+  background-color: #0e5ec5e5;
+}
+button#pista{
+  padding: 2%;
+  font-size: large;
+  border-radius: 100%;
+}
+#blanco-pista{
+  font-size: larger;
+  padding: 2%;
+}
+.letra{
+  background-color: #c37713e8;
+  color: white;
+  width: 10%;
+  box-sizing: initial;
+  padding: 1%;
+}
